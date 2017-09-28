@@ -6,13 +6,16 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-Test	KEYWORD1
+Motor           KEYWORD1
+Ultrasonic      KEYWORD1
+ColorSensor     KEYWORD1
+SpeedController KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-doSomething	KEYWORD2
+set             KEYWORD2
 
 #######################################
 # Instances (KEYWORD2)
