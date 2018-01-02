@@ -1,19 +1,19 @@
 //
-//  Extinguisher.h
+//  ESC.h
 //  
 //
 //  Created by Alex Broaddus on 10/30/17.
 //
 
-#ifndef Extinguisher_h
-#define Extinguisher_h
+#ifndef ESC_h
+#define ESC_h
 
 #include "Arduino.h"
 #include "Servo.h"
 
-class Extinguisher : public Servo{
+class ESC : public Servo{
 public:
-    Extinguisher(int pin);
+    ESC(int pin);
     void start();
     void stop();
     void setPower(float power);
@@ -27,4 +27,4 @@ private:
     bool isReversed;
 };
 
-#endif /* Extinguisher_h */
+#endif /* ESC_h */

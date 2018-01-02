@@ -1,14 +1,14 @@
 //
-//  Extinguisher.cpp
+//  ESC.cpp
 //  
 //
 //  Created by Alex Broaddus on 10/30/17.
 //
 
 #include "Arduino.h"
-#include "Extinguisher.h"
+#include "ESC.h"
 
-Extinguisher::Extinguisher(int pin){
+ESC::ESC(int pin){
     _pin = pin;
     _power = 1;
     isReversed = false;
@@ -16,18 +16,18 @@ Extinguisher::Extinguisher(int pin){
     write(90);
 }
 
-void Extinguisher::start(){
+void ESC::start(){
     if(!isReversed)
         write(90 + 90*_power);
     else
         write(90 + 90*_power*-1);
 }
 
-void Extinguisher::stop(){
+void ESC::stop(){
     write(90);
 }
 
-void Extinguisher::setPower(float power){
+void ESC::setPower(float power){
     if(power > 1)
         power = 1;
     else if(power < 0)
@@ -37,14 +37,14 @@ void Extinguisher::setPower(float power){
         start();
 }
 
-float Extinguisher::getPower(){
+float ESC::getPower(){
     return _power;
 }
 
-bool Extinguisher::isOn(){
+bool ESC::isOn(){
     return read() != 90;
 }
 
-void Extinguisher::reverse(){
+void ESC::reverse(){
     isReversed = !isReversed;
 }
