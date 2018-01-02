@@ -6,13 +6,40 @@
 # Datatypes (KEYWORD1)
 #######################################
 
-Test	KEYWORD1
+# Actuators
+L298N           KEYWORD1
+ContinuousServo KEYWORD1
+ESC             KEYWORD1
+
+# Sensors
+Ultrasonic      KEYWORD1
+ColorSensor     KEYWORD1
+SpeedController KEYWORD1
+
+# Utilities
+RobotDrive      KEYWORD1
+SpeedController KEYWORD1
 
 #######################################
 # Methods and Functions (KEYWORD2)
 #######################################
 
-doSomething	KEYWORD2
+# Actuators
+set             KEYWORD2
+start           KEYWORD2
+stop            KEYWORD2
+setPower        KEYWORD2
+getPower        KEYWORD2
+isOn            KEYWORD2
+reverse         KEYWORD2
+
+# Sensors
+getDistance     KEYWORD2
+getColor        KEYWORD2
+
+# Utilities
+tankDrive       KEYWORD2
+arcadeDrive     KEYWORD2
 
 #######################################
 # Instances (KEYWORD2)
