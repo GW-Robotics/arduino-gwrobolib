@@ -19,7 +19,7 @@
 #define MOTOR_SPEED 0.5
 #define MOTOR_DELAY 2000
 
-Motor motor(MOTOR_A, MOTOR_B);
+L298N motor(MOTOR_A, MOTOR_B);
 
 // the setup function runs once when you press reset or power the board
 void setup() {
