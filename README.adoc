@@ -1,4 +1,4 @@
-# arduino-gwrobolib
+# gwrobolib
 Robotics library for Arduino
 
 ## Cloning Source
