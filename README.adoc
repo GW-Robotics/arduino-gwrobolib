@@ -27,3 +27,9 @@ The documentation for this library is most up-to-date on the GitHub Wiki, but ca
 
 `git submodule update --recursive --remote`
 
+The gitmodule in the main repository must also be pushed to reference the new upstream commit: 
+
+```bash
+git commit -a -m "Your commit message here"
+git push
+```
