@@ -1,2 +1,18 @@
 # arduino-gwrobolib
 Robotics library for Arduino
+
+## Cloning Source
+This library uses GitHub Wiki for its documentation, and the latest documentation can be found on this repository's [wiki](https://github.com/GW-Robotics/gwrobolib/wiki).
+
+If you would like to have an offline copy of the documentation in you repository, run the following command after cloning to initialise the docs submodule:
+
+`git submodule update --init --recursive`
+
+## Pushing Documentation
+
+If any offline edits are made that should be pushed to the GitHub Wiki, run the following command:
+
+1. `cd docs`
+2. If you have added new files and want to commit them all: `git add --all`
+3. `git commit -a -m "Your commit message here"`
+4. `git push origin HEAD:master`
