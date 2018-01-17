@@ -20,4 +20,5 @@ If any offline edits are made that should be pushed to the GitHub Wiki, run the 
 ```bash
 cd ..
 git commit -a -m "Your commit message here"
+git push
 ```
