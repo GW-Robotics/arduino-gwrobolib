@@ -9,7 +9,6 @@ If you would like to have an offline copy of the documentation in you repository
 `git submodule update --init --recursive`
 
 ## Pushing Documentation
-
 If any offline edits are made that should be pushed to the GitHub Wiki, run the following command:
 
 1. `cd docs`
@@ -22,3 +21,9 @@ cd ..
 git commit -a -m "Your commit message here"
 git push
 ```
+
+## Pulling Documentation
+The documentation for this library is most up-to-date on the GitHub Wiki, but can be updated in the repository using the following command:
+
+`git submodule update --recursive --remote`
+
