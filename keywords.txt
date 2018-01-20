@@ -10,6 +10,7 @@
 L298N	KEYWORD1
 ContinuousServo	KEYWORD1
 ESC	KEYWORD1
+TB6612FNG	KEYWORD1
 
 # Sensors
 Ultrasonic	KEYWORD1
@@ -32,6 +33,8 @@ setPower	KEYWORD2
 getPower	KEYWORD2
 isOn	KEYWORD2
 reverse	KEYWORD2
+enable	KEYWORD2
+disable	KEYWORD2
 
 # Sensors
 getDistance	KEYWORD2
